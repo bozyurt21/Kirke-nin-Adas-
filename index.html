@@ -22,9 +22,14 @@
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="./story.html">Kirke'nin Hikayesi</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./blog.html">Blog</a>
-                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./blog1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Blog
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./blog1.html">Genç Kadınlara İlham Verecek Kitap ve Film Önerileri</a></li>
+                  </ul>
+              </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./sss.html">SSS</a>
                 </li>
@@ -305,30 +310,39 @@
           
         </div>
       </section>
-      <script>
-        document.getElementById('newsletterForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const email = document.getElementById('emailInput').value;
-            
-            fetch('subscribe.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ email: email }),
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert('Subscription successful!');
-                } else {
-                    alert('Subscription failed. Please try again.');
-                }
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
-        });
-    </script>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+              <a href="./index.html"><img src="./images/kirkelogo.jpeg"></a>
+              <p>Kendi dünyasını yaratmaya cesaret edenlerin buluşma noktası!</p>
+          </div>
+          <div class="footer-column">
+              <h3>Sayfalar</h3>
+              <ul>
+                  <li><a href="./index.html">Ana Sayfa</a></li>
+                  <li><a href="./story.html">Kirke'nin Hikayesi</a></li>
+                  <li><a href="./sss.html">SSS</a></li>
+                  <li><a href="./blog1.html">Blog</a></li>
+                  <li><a href="./contact.html">İletişim</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>İletişim</h3>
+              <ul>
+                  <li><a href="https://open.spotify.com/show/0N3E8isXGTEykMGc94zCsd?si=gvJlRwgZQP6tuh1nu7W68A" target="_blank">
+                    <i class="fab fa-spotify"></i> Spotify</a> 
+                  </li>
+                  <li><a href="https://podcasts.apple.com/tr/podcast/kirkenin-adas%C4%B1/id1750186777" target="_blank">
+                    <i class="fab fa-apple"></i> Apple</a> 
+                  </li>
+                  <li><a href="https://www.youtube.com/@TurkisheToplulugu/videos" target="_blank">
+                    <i class="fab fa-youtube"></i> Youtube</a> 
+                  </li>
+                  <li><i class="fas fa-envelope"></i> info@turki-she.com</li>
+              </ul>
+          </div>
+      </div>
+
+      </footer>
   </body>
 </html>

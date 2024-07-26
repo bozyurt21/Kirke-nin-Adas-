@@ -512,5 +512,77 @@ body{
     font-weight: 600;
 }
 
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+footer img:hover {
+    border: 3px solid #F86D17;
+
+}
+
+
+.footer-column p {
+    margin-top: 50px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 30px;
+    text-align: center;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-weight: 800;
+    color:#F86D17;
+    letter-spacing: 3px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-size: 20px;
+}
+
+
+.footer-column ul li a:hover {
+    color: #F86D17;
+}
+
+footer {
+    font-family: garet;
+}
+
 
 

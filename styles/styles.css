@@ -612,8 +612,9 @@ footer {
 .blog-content h2 {
     color:#eb771f;
     padding: 10px 30px;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 800;
+    margin-right: 30%;
 }
 
 .blog-content p {
@@ -628,3 +629,49 @@ footer {
 }
 
 
+.contact-form {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 30px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    color:#F86D17;
+    margin-bottom: 50px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 800;
+    letter-spacing: 10px;
+}
+
+.contact-in {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact-in label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-in input,
+.contact-in textarea {
+    width: calc(100% - 22px); /* Adjust for padding */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-in button {
+    background-color: #F86D17;
+    border: #F86D17;
+    padding: 10px;
+    margin: 0 45%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}

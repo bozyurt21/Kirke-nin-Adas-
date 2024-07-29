@@ -87,7 +87,49 @@
         </div>
       </div>
     </nav>
-    
+
+    <!--CONTACT ME-->
+    <div class="contact-form">
+      <h2>İLETİŞİM</h2>
+
+      <form id="contactForm" action="submit_form.php" method="post">
+
+        <div class="contact-in">
+            <label for="name">Ad/Soyad</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+
+        <div class="contact-in">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+
+        <div class="contact-in">
+          <label for="name">Konu</label>
+          <input type="text" class="form-control" id="subject" name="subject" required>
+      </div>
+        <div class="contact-in">
+          <label for="message">Message</label>
+          <textarea id="message" class="form-control" name="message" rows="5" required></textarea>
+        </div>
+        <div class="contact-in">
+          <button type="submit" class="btn btn-warning">Yolla!</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+          var name = document.getElementById('name').value.trim();
+          var email = document.getElementById('email').value.trim();
+          var message = document.getElementById('message').value.trim();
+          var subject = document.getElementById('subject').value.trim();
+          
+          if (!name || !email || !message || !subject) {
+              alert('Please fill in all fields.');
+              event.preventDefault(); // Prevents the form from being submitted
+          }
+      });
+    </script>
     <footer>
       <div class="footer-container">
         <div class="footer-column">

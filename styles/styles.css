@@ -688,3 +688,17 @@ footer {
     filter: blur(0);
     transform: translateX(0);
 }
+
+.contact-in textarea {
+    resize: none;
+}
+
+form button {
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 10px #F86D17;
+}
+
+form button:hover {
+    box-shadow: none;
+}

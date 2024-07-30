@@ -16,6 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <script src="https://unpkg.com/feather-icons"></script>
+    <script defer src="./app.js"></script>
   </head>
   <body>
     <script
@@ -94,25 +95,25 @@
 
       <form id="contactForm" action="submit_form.php" method="post">
 
-        <div class="contact-in">
+        <div class="contact-in hidden">
             <label for="name">Ad/Soyad</label>
             <input type="text" class="form-control" id="name" name="name" required>
         </div>
 
-        <div class="contact-in">
+        <div class="contact-in hidden">
           <label for="email">Email</label>
           <input type="email" class="form-control" id="email" name="email" required>
         </div>
 
-        <div class="contact-in">
+        <div class="contact-in hidden">
           <label for="name">Konu</label>
           <input type="text" class="form-control" id="subject" name="subject" required>
       </div>
-        <div class="contact-in">
+        <div class="contact-in hidden">
           <label for="message">Message</label>
           <textarea id="message" class="form-control" name="message" rows="5" required></textarea>
         </div>
-        <div class="contact-in">
+        <div class="contact-in hidden">
           <button type="submit" class="btn btn-warning">Yolla!</button>
         </div>
       </form>

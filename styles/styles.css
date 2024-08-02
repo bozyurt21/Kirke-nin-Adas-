@@ -659,7 +659,6 @@ footer {
     width: 45rem;
     height: 45rem;
     border-radius: 20px;
-    display: block;
     padding-top: 5rem;
     
 }
@@ -801,3 +800,4 @@ form {
 .contact-info {
     background-color: #FAFAFA;
 }
+

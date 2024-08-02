@@ -93,32 +93,33 @@
     <!--CONTACT ME-->
     <div class="contact-container">
         <div class="contact-form hidden">
-          <form action="index.html">
+          <form id="contactForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdzzQwr_Y9hpQ5f5X_3toASyLN5N000Xj2ba1tU1jx-D6m6ow/formResponse" method="POST">
             <h3 class="contact-title hidden">İLETİŞİM</h3>
             <div class="input-container hidden">
-              <input type="text" name="name" class="input">
+              <input type="text" name="entry.1772014944" class="input">
               <label for="">Ad/Soyad</label>
               <span>Ad/Soyad</span>
             </div>
             <div class="input-container hidden">
-              <input type="email" name="email" class="input">
+              <input type="email" name="entry.1103269105" class="input">
               <label for="">Email</label>
               <span>Email</span>
             </div>
             <div class="input-container hidden">
-              <input type="text" name="subject" class="input">
+              <input type="text" name="entry.91582557" class="input">
               <label for="">Konu</label>
               <span>Konu</span>
             </div>
             <div class="input-container textarea hidden">
-              <textarea name="message" class="input" cols="30" rows="5"></textarea>
+              <textarea name="entry.2006334440" class="input" cols="30" rows="5"></textarea>
               <label for="">Mesaj</label>
               <span>Mesaj</span>
             </div>
             <input type="submit" value="Yolla" class="btn hidden">
           </form>
-        </div>
+        </div> 
     </div>
+      
     <footer>
       <div class="footer-container">
         <div class="footer-column">
@@ -153,5 +154,29 @@
     </div>
 
     </footer>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+    
+        var form = event.target;
+        var data = new FormData(form);
+    
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', form.action, true);
+        xhr.setRequestHeader('Accept', 'application/xml, text/xml, */*; q=0.01');
+    
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Display the success message
+                alert("...")
+            } else if (xhr.readyState === 4) {
+                // Handle error case if needed
+                alert('Mesajınız başarıyla yollanmıştır:)');
+            }
+        };
+    
+        xhr.send(data);
+    });
+    </script>
   </body>
 </html>

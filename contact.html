@@ -17,6 +17,7 @@
     />
     <script src="https://unpkg.com/feather-icons"></script>
     <script defer src="./app.js"></script>
+    <script defer src="./app2.js"></script>
   </head>
   <body>
     <script
@@ -90,47 +91,34 @@
     </nav>
 
     <!--CONTACT ME-->
-    <div class="contact-form">
-      <h2>İLETİŞİM</h2>
-
-      <form id="contactForm" action="#" method="post">
-
-        <div class="contact-in hidden">
-            <label for="name">Ad/Soyad</label>
-            <input type="text" class="form-control" id="name" name="name" autocomplete="off" required>
+    <div class="contact-container">
+        <div class="contact-form">
+          <form action="index.html">
+            <h3 class="contact-title">İLETİŞİM</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input">
+              <label for="">Ad/Soyad</label>
+              <span>Ad/Soyad</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input">
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="text" name="subject" class="input">
+              <label for="">Konu</label>
+              <span>Konu</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input" cols="30" rows="5"></textarea>
+              <label for="">Mesaj</label>
+              <span>Mesaj</span>
+            </div>
+            <input type="submit" value="Yolla" class="btn">
+          </form>
         </div>
-
-        <div class="contact-in hidden">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" name="email" autocomplete="off" required>
-        </div>
-
-        <div class="contact-in hidden">
-          <label for="name">Konu</label>
-          <input type="text" class="form-control" id="subject" name="subject" autocomplete="off" required>
-      </div>
-        <div class="contact-in hidden">
-          <label for="message">Message</label>
-          <textarea id="message" class="form-control" name="message" rows="5" autocomplete="off" required></textarea>
-        </div>
-        <div class="contact-in hidden">
-          <button type="submit" class="btn btn-warning">Yolla!</button>
-        </div>
-      </form>
     </div>
-    <script>
-      document.getElementById('contactForm').addEventListener('submit', function(event) {
-          var name = document.getElementById('name').value.trim();
-          var email = document.getElementById('email').value.trim();
-          var message = document.getElementById('message').value.trim();
-          var subject = document.getElementById('subject').value.trim();
-          
-          if (!name || !email || !message || !subject) {
-              alert('Please fill in all fields.');
-              event.preventDefault(); // Prevents the form from being submitted
-          }
-      });
-    </script>
     <footer>
       <div class="footer-container">
         <div class="footer-column">

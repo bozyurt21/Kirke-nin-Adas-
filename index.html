@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="./styles/styles.css"/>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
       <script defer src="./app.js"></script>
+      <script defer src="./script.js"></script>
     
   </head>
   <body>
@@ -218,10 +219,11 @@
             <h2>Genç Kadınların Güçlenmesi</h2>
             <p>Genç kadınların güçlenmesine ve toplumsal değişime öncü olmalarını hedefliyoruz.</p>
           </div>
+          <!---->
           <div class="vision-subcontainer hidden">
-            <img src="./icons/easy-icon.png">
-            <h2>Kolaylaştırıcı</h2>
-            <p> Kadın liderlerin ve genç kadınların bir araya gelerek birbirlerinden öğrenebilecekleri bir platform oluşturuyoruz.</p>
+            <img src="./icons/progress-icon.png">
+            <h2>Zorluklar ve Fırsatlar</h2>
+            <p>Podcast kanalımızda, kadın liderlerin karşılaştıkları zorlukları ve fırsatları birlikte keşfetmeyi amaçlıyoruz.</p>
           </div>
           <div class="vision-subcontainer hidden">
             <img src="./icons/compass-icon.png">
@@ -237,11 +239,6 @@
             <img src="./icons/leader-icon.png">
             <h2>Liderlik ve Değişim</h2>
             <p>Kadınların güçlenmesi ve toplumsal değişime liderlik etmeleri için alan yaratmayı hedefliyoruz.</p>
-          </div>
-          <div class="vision-subcontainer hidden">
-            <img src="./icons/progress-icon.png">
-            <h2>Zorluklar ve Fırsatlar</h2>
-            <p>Podcast kanalımızda, kadın liderlerin karşılaştıkları zorlukları ve fırsatları birlikte keşfetmeyi amaçlıyoruz.</p>
           </div>
         </div>
       </section>
@@ -301,12 +298,14 @@
           <h1>BÜLTENİMİZE <span id="sub-content">KATILIN</span></h1>
           <div class="news-subcontainer hidden">
             <p>Kirke’nin Adası’nın büyülü dünyasında kaybolmak ve yeni bölümlerden ilk siz haberdar olmak için bültenimize katılın! Her hafta ilham verici hikayelerle dolu bir yolculuğa çıkmaya hazır mısınız?</p>
-            <div class="input-group mb-3">
-              <span id="mail">
-                <input type="email" placeholder="Mail Giriniz" class="form-control" required>
-                <button type="button" class="btn btn-warning">Katıl!</button>
-              </span>
-            </div>
+            <form onsubmit="handleFormSubmission(event)">
+              <div class="input-group mb-3">
+                <span id="mail">
+                  <input type="email" id="email" name="email" placeholder="Mail Giriniz" class="form-control" required>
+                  <button type="submit" class="btn btn-warning">Katıl!</button>
+                </span>
+              </div>
+            </form>
           </div>
           
         </div>

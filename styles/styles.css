@@ -261,6 +261,7 @@ body{
 }
 .podcast-subcontainer img:hover{
     border: 3px solid #F86D17;
+    box-shadow: 0 0 10px 10px #F86D17;
 }
 
 .podcast-subcontainer a{
@@ -307,6 +308,7 @@ body{
     margin: 10px;
     text-align: center;
     margin-bottom: 30px;
+    box-shadow: 0 2px 5px 5px #000000;
     
 }
 
@@ -315,6 +317,7 @@ body{
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
+    
 }
 
 .host-container h2 {
@@ -327,6 +330,7 @@ body{
 
 .host-subcontainer img:hover {
     border: 3px solid #F86D17;
+    box-shadow: 0 0 10px 10px #F86D17;
 }
 
 .host-container a{

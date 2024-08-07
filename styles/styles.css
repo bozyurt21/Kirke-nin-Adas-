@@ -6,7 +6,7 @@
 
 body{
     background-color: #212529;
-    padding-top: 56px;
+    padding-top: 100px;
 }
 
 #navbarNav {
@@ -860,7 +860,7 @@ form {
 
     .why-subcontainer p {
         font-size: 1rem;
-        margin: 0 10%; /* Adjusting margin */
+        margin: 0 1%; /* Adjusting margin */
     }
 
     .news-container h1 {
@@ -869,7 +869,7 @@ form {
 
     .news-subcontainer p {
         font-size: 1rem;
-        margin: 0 10%; /* Adjusting margin */
+        margin: 0 1%; /* Adjusting margin */
     }
 
     .blog-content h1 {
@@ -882,7 +882,7 @@ form {
 
     .blog-content p {
         font-size: 1rem;
-        margin: 0 10%; /* Adjusting margin */
+        margin: 0 1%; /* Adjusting margin */
     }
 
     .sss-container h1 {
@@ -895,7 +895,7 @@ form {
 
     .sss-subcontainer p {
         font-size: 1rem;
-        margin: 0 10%; /* Adjusting margin */
+        margin: 0 1%; /* Adjusting margin */
     }
 
     .story-header h1 {
@@ -904,7 +904,7 @@ form {
 
     .story-container p {
         font-size: 1rem;
-        margin: 0 10%; /* Adjusting margin */
+        margin: 0 1%; /* Adjusting margin */
     }
 
     #mail {

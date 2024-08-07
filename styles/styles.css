@@ -6,6 +6,7 @@
 
 body{
     background-color: #212529;
+    padding-top: 56px;
 }
 
 #navbarNav {
@@ -802,6 +803,7 @@ form {
 }
 
 /* Media Queries */
+/* Media Queries */
 @media (max-width: 576px) {
     .banner h1 {
         font-size: 2rem;
@@ -821,6 +823,7 @@ form {
 
     .content-container p {
         font-size: 1rem;
+        margin: 0 10%; /* Adjusting margin */
     }
 
     .vision h1 {
@@ -857,6 +860,7 @@ form {
 
     .why-subcontainer p {
         font-size: 1rem;
+        margin: 0 10%; /* Adjusting margin */
     }
 
     .news-container h1 {
@@ -865,6 +869,7 @@ form {
 
     .news-subcontainer p {
         font-size: 1rem;
+        margin: 0 10%; /* Adjusting margin */
     }
 
     .blog-content h1 {
@@ -877,6 +882,7 @@ form {
 
     .blog-content p {
         font-size: 1rem;
+        margin: 0 10%; /* Adjusting margin */
     }
 
     .sss-container h1 {
@@ -889,6 +895,7 @@ form {
 
     .sss-subcontainer p {
         font-size: 1rem;
+        margin: 0 10%; /* Adjusting margin */
     }
 
     .story-header h1 {
@@ -897,6 +904,7 @@ form {
 
     .story-container p {
         font-size: 1rem;
+        margin: 0 10%; /* Adjusting margin */
     }
 
     #mail {
@@ -934,6 +942,7 @@ form {
 
     .content-container p {
         font-size: 1.2rem;
+        margin: 0 10%; /* Adjusting margin */
     }
 
     .vision h1 {
@@ -970,6 +979,7 @@ form {
 
     .why-subcontainer p {
         font-size: 1.5rem;
+        margin: 0 10%; /* Adjusting margin */
     }
 
     .news-container h1 {
@@ -978,6 +988,7 @@ form {
 
     .news-subcontainer p {
         font-size: 1.5rem;
+        margin: 0 10%; /* Adjusting margin */
     }
 
     .blog-content h1 {
@@ -990,6 +1001,7 @@ form {
 
     .blog-content p {
         font-size: 1.2rem;
+        margin: 0 10%; /* Adjusting margin */
     }
 
     .sss-container h1 {
@@ -1002,6 +1014,7 @@ form {
 
     .sss-subcontainer p {
         font-size: 1.2rem;
+        margin: 0 10%; /* Adjusting margin */
     }
 
     .story-header h1 {
@@ -1010,6 +1023,7 @@ form {
 
     .story-container p {
         font-size: 1.2rem;
+        margin: 0 10%; /* Adjusting margin */
     }
 
     #mail {

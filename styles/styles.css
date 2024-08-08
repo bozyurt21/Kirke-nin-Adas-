@@ -801,13 +801,50 @@ form {
     background-color: #FAFAFA;
 }
 
-/* Media Queries */
-/* Media Queries */
 @media (max-width: 576px) {
-    * {
-        flex-wrap: wrap;
+    .navbar {
+        position: relative;
     }
 
+    .banner {
+        padding-top: 0; /* No offset needed for non-fixed navbar */
+    }
+
+    /* Remove margins for all sections */
+    .banner,
+    .podcast,
+    .content-container,
+    .vision,
+    .host,
+    .why,
+    .news,
+    .sss,
+    .story-container,
+    .blog-content {
+        margin: 0 !important;
+        padding: 0 10px; /* Adding a little padding for better readability */
+    }
+}
+
+@media (min-width: 577px) {
+    body {
+        padding-top: 56px; /* Offset for fixed navbar on larger screens */
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}
+
+/* Dropdown menu on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Responsive styling for margins */
+@media (max-width: 576px) {
     .banner h1 {
         font-size: 2rem;
     }
@@ -826,7 +863,7 @@ form {
 
     .content-container p {
         font-size: 1rem;
-        margin: 0 1%; /* Adjusting margin */
+        margin: 0 10px; /* Adjusting margin */
     }
 
     .vision h1 {
@@ -863,7 +900,7 @@ form {
 
     .why-subcontainer p {
         font-size: 1rem;
-        margin: 0 1%; /* Adjusting margin */
+        margin: 0 10px; /* Adjusting margin */
     }
 
     .news-container h1 {
@@ -872,7 +909,7 @@ form {
 
     .news-subcontainer p {
         font-size: 1rem;
-        margin: 0 1%; /* Adjusting margin */
+        margin: 0 10px; /* Adjusting margin */
     }
 
     .blog-content h1 {
@@ -885,7 +922,7 @@ form {
 
     .blog-content p {
         font-size: 1rem;
-        margin: 0 1%; /* Adjusting margin */
+        margin: 0 10px; /* Adjusting margin */
     }
 
     .sss-container h1 {
@@ -898,7 +935,7 @@ form {
 
     .sss-subcontainer p {
         font-size: 1rem;
-        margin: 0 1%; /* Adjusting margin */
+        margin: 0 10px; /* Adjusting margin */
     }
 
     .story-header h1 {
@@ -907,7 +944,7 @@ form {
 
     .story-container p {
         font-size: 1rem;
-        margin: 0; /* Adjusting margin */
+        margin: 0 10px; /* Adjusting margin */
     }
 
     #mail {
@@ -945,7 +982,7 @@ form {
 
     .content-container p {
         font-size: 1.2rem;
-        margin: 0 1%; /* Adjusting margin */
+        margin: 0 10px; /* Adjusting margin */
     }
 
     .vision h1 {
@@ -982,7 +1019,7 @@ form {
 
     .why-subcontainer p {
         font-size: 1.5rem;
-        margin: 0 1%; /* Adjusting margin */
+        margin: 0 10px; /* Adjusting margin */
     }
 
     .news-container h1 {
@@ -991,7 +1028,7 @@ form {
 
     .news-subcontainer p {
         font-size: 1.5rem;
-        margin: 0 1%; /* Adjusting margin */
+        margin: 0 10px; /* Adjusting margin */
     }
 
     .blog-content h1 {
@@ -1004,7 +1041,7 @@ form {
 
     .blog-content p {
         font-size: 1.2rem;
-        margin: 0 1%; /* Adjusting margin */
+        margin: 0 10px; /* Adjusting margin */
     }
 
     .sss-container h1 {
@@ -1017,7 +1054,7 @@ form {
 
     .sss-subcontainer p {
         font-size: 1.2rem;
-        margin: 0 1%; /* Adjusting margin */
+        margin: 0 10px; /* Adjusting margin */
     }
 
     .story-header h1 {
@@ -1026,7 +1063,7 @@ form {
 
     .story-container p {
         font-size: 1.2rem;
-        margin: 0 1%; /* Adjusting margin */
+        margin: 0 10px; /* Adjusting margin */
     }
 
     #mail {

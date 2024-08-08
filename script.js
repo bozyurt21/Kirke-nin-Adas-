@@ -1,23 +1,37 @@
-function validateEmail(email) {
-  const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-  return re.test(String(email).toLowerCase());
-}
-
-function handleFormSubmission(event) {
+document.getElementById('emailForm').addEventListener('submit', function(event) {
   event.preventDefault();
-  const emailInput = document.getElementById('email').value;
-  if (!validateEmail(emailInput)) {
-      alert('Please enter a valid email address.');
-      return;
+  const email = document.getElementById('email').value;
+  
+  // Validate email format
+  if (!validateEmail(email)) {
+    alert('Invalid email address');
+    return;
   }
 
-  // Call Google Apps Script Web App URL to submit the email
-  const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL';
-  fetch(scriptURL, { method: 'POST', body: new FormData(event.target) })
-      .then(response => response.json())
-      .then(data => {
-          alert('Thank you for subscribing!');
-          event.target.reset();
-      })
-      .catch(error => console.error('Error!', error.message));
+  // Call your verification function here
+  verifyEmail(email);
+});
+
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
+function verifyEmail(email) {
+  // Example API URL - Replace with actual API
+  const apiUrl = `https://api.example.com/verify?email=${encodeURIComponent(email)}`;
+
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+      if (data.valid) {
+        alert('Email verified! You will receive our updates.');
+        // Optionally, store the email address or handle further actions
+      } else {
+        alert('Email verification failed.');
+      }
+    })
+    .catch(error => {
+      console.error('Error verifying email:', error);
+    });
 }

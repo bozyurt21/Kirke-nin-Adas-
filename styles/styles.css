@@ -6,7 +6,6 @@
 
 body{
     background-color: #212529;
-    padding-top: 100px;
 }
 
 #navbarNav {
@@ -805,6 +804,9 @@ form {
 /* Media Queries */
 /* Media Queries */
 @media (max-width: 576px) {
+    * {
+        overflow: hidden;
+    }
     .banner h1 {
         font-size: 2rem;
     }
@@ -904,7 +906,7 @@ form {
 
     .story-container p {
         font-size: 1rem;
-        margin: 0 1%; /* Adjusting margin */
+        margin: 0; /* Adjusting margin */
     }
 
     #mail {

@@ -805,8 +805,9 @@ form {
 /* Media Queries */
 @media (max-width: 576px) {
     * {
-        overflow: hidden;
+        flex-wrap: wrap;
     }
+
     .banner h1 {
         font-size: 2rem;
     }

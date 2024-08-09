@@ -864,6 +864,7 @@ form {
     .content-container p {
         font-size: 1rem;
         margin: 0 10px; /* Adjusting margin */
+        padding: 10px;
     }
 
     .vision h1 {
@@ -903,17 +904,23 @@ form {
         margin: 0 10px; /* Adjusting margin */
     }
 
+    .news-container {
+        padding: 0;
+        margin: 10px;
+    }
+
     .news-container h1 {
         font-size: 1.5rem;
+        margin-bottom: 10px;
     }
 
     .news-subcontainer p {
         font-size: 1rem;
-        margin: 0 10px; /* Adjusting margin */
+        margin: 10px; /* Adjusting margin */
     }
 
     .blog-content h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .blog-content h2 {
@@ -924,7 +931,9 @@ form {
         font-size: 1rem;
         margin: 0 10px; /* Adjusting margin */
     }
-
+    .sss-subcontainer {
+        margin: 0 10px;
+    }
     .sss-container h1 {
         font-size: 1.5rem;
     }

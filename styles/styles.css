@@ -249,7 +249,7 @@ body{
     text-align: center;
 }
 
-.podcast-subcontainer h2 {
+.podcast-subcontainer a h2 {
     color: #F86D17;
     font-size: 30px;
     font-weight: 600;
@@ -608,7 +608,7 @@ footer {
 
 .blog-content h1 {
     color: #F86D17;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 700;
     letter-spacing: 1px; 
 }
@@ -617,6 +617,14 @@ footer {
     color:#eb771f;
     padding: 10px 30px;
     font-size: 50px;
+    font-weight: 800;
+    margin-right: 30%;
+}
+
+.blog-content h3 {
+    color:#eb771f;
+    padding: 10px 30px;
+    font-size: 30px;
     font-weight: 800;
     margin-right: 30%;
 }
@@ -872,8 +880,8 @@ form {
     }
 
     .vision-subcontainer {
-        margin: 5px;
-        padding: 5px;
+        margin: 1px;
+        padding: 1px;
     }
 
     .vision-subcontainer h2 {
@@ -930,10 +938,17 @@ form {
 
     .blog-content h1 {
         font-size: 1.5rem;
+        padding: 0;
     }
 
     .blog-content h2 {
         font-size: 1.2rem;
+        padding: 0;
+    }
+
+    .blog-content h3 {
+        font-size: 1rem;
+        padding: 0;
     }
 
     .blog-content p {
@@ -1063,11 +1078,18 @@ form {
     }
 
     .blog-content h1 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
+        padding: 0;
     }
 
     .blog-content h2 {
-        font-size: 2rem;
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+    .blog-content h3 {
+        font-size: 1rem;
+        padding: 0;
     }
 
     .blog-content p {

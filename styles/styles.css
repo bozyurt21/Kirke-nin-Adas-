@@ -877,6 +877,10 @@ li {
 
 /* Responsive styling for margins */
 @media (max-width: 576px) {
+    .vision {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .navbar {
         font-size: 0.8;
         font-weight: 400;

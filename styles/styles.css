@@ -1,11 +1,23 @@
+:root {
+    --textColor: #000000;
+    --constBlack: #000000;
+    --bacgroundColor: #FFFFFF;
+    --navBackground: #686D76;
+    --whiteText: #FFFFFF;
+    --textColor2: #F86D17;
+    --textColor3: #eb771f;
+    --hostBackground: #31363F;
+    --font: garet;
+}
+
 #logo {
     font-size: 1.5rem;
-    color: #F86D17;
+    color: var(--textColor2);
     font-weight: 800;
 }
 
 body{
-    background-color: #212529;
+    background-color: var(--bacgroundColor);
 }
 
 #navbarNav {
@@ -14,7 +26,7 @@ body{
 }
 
 .navbar {
-    background-color:#686D76;
+    background-color:var(--navBackground);
     font-size: 1.1rem;
     font-weight: 600;
     font-family: var(--font-2);
@@ -32,14 +44,14 @@ body{
 }
 
 .nav-link {
-    color: #1A5276;
+    color: var(--textColor);
     border-radius: 20px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .nav-link:hover {
-    background-color: #F86D17;
-    color:black;
+    background-color: var(--textColor2);
+    color:var(--constBlack);
 }
 
 .nav-item {
@@ -50,13 +62,13 @@ body{
 }
 .social a i{
    padding: 8px;
-   color: black;
+   color: var(--constBlack);
    border-radius: 50%;
 }
 
 .social a i:hover {
-    background-color: #F86D17;
-    color: azure;
+    background-color: var(--textColor2);
+    color: var(--whiteText);
 }
 
 .social a {
@@ -80,7 +92,7 @@ body{
     left: 50%;
     max-width: 90%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--whiteText);
     padding: 10px;
     font-size: 3rem;
     font-family: garet;
@@ -94,10 +106,10 @@ body{
     left: 50%;
     max-width: 80%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--whiteText);
     padding: 10px;
     font-size: 1.1rem;
-    font-family: garet;
+    font-family: var(--font);
     font-weight: 800;
     text-align: center;
 }
@@ -108,58 +120,66 @@ body{
     top: 65%;
     left: 50%;
     font-weight: 600;
-    background-color:#F86D17;
-    border-color: #F86D17;
+    background-color:var(--textColor2);
+    border-color: var(--textColor2);
 }
 
 .banner button:hover {
     background-color: rgba(0, 0, 0, 0);
-    border-color: #F86D17;
-    color:#F86D17;
+    border-color: var(--textColor2);
+    color:var(--textColor2);
 }
 
 .content-container {
     display: block;
     padding: 50px;
-    margin: 20px;
-    border-radius: 20px;
     background-image: url("../images/background3.png");
+}
+
+#link-name {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--constBlack);
+    font-weight: 400;
+}
+#link-name:hover {
+    color: var(--whiteText);
 }
 
 .content-container h1, .content-container p {
     text-align: center;
-    font-family: garet;
+    font-family: var(--font);
 }
 
 .content-container h1 {
     font-weight: 800;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     letter-spacing: 5px;
-    color: #000000;
+    color: var(--textColor);
 }
 
 .content-container p {
     padding: 30px;
     border-radius: 20px;
     font-size: 24px;
-    color: white;
+    color: var(--whiteText);
     margin: 0 100px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 #social-2 i{
-    color:#000000;
+    color:var(--constBlack);
     font-size: 40px;
     margin: 0 20px;
-    margin-left: 23%;
+    margin-left: 18%;
     padding: 10px;
     border-radius: 50%;
 }
 
 #social-2 i:hover {
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: var(--constBlack);
+    color: var(--whiteText);
 }
 
 #social-2 a{
@@ -167,7 +187,7 @@ body{
 }
 
 .vision h1{
-    color: #F86D17;
+    color: var(--textColor2);
     font-family: garet;
     text-align: center;
     font-weight: 600;
@@ -190,7 +210,7 @@ body{
 
 .vision-subcontainer h2 {
     text-align: center;
-    color: #F86D17;
+    color: var(--textColor2);
     font-family: garet;
     font-size: 30px;
     font-weight: 550;
@@ -202,15 +222,14 @@ body{
     box-sizing: border-box;
     max-width: 30%;
     margin: 10px;
-    padding: 50px;
+    padding: 20px;
     text-align: center;
 }
 
 .vision-subcontainer p {
-    color: white;
-    font-family: garet;
+    color: var(--textColor);
+    font-family: var(--font);
     font-size: 22px;
-    font-weight: 400;
 }
 
 .vision-container img {
@@ -219,7 +238,7 @@ body{
 
 .podcast h1{
     margin-top: 50px;
-    color:#F86D17;
+    color:var(--textColor2);
     font-family: garet;
     font-size: 36px;
     text-align: center;
@@ -250,7 +269,7 @@ body{
 }
 
 .podcast-subcontainer a h2 {
-    color: #F86D17;
+    color: var(--textColor2);
     font-size: 30px;
     font-weight: 600;
     font-family: garet;
@@ -259,7 +278,7 @@ body{
 }
 
 .podcast-subcontainer h2:hover {
-    color:#FFFFFF;
+    color: var(--constBlack);
 }
 
 .podcast-subcontainer img {
@@ -270,8 +289,8 @@ body{
 }
 
 .podcast-subcontainer img:hover{
-    border: 3px solid #F86D17;
-    box-shadow: 0 0 10px 10px #F86D17;
+    border: 3px solid var(--textColor2);
+    box-shadow: 0 0 10px 10px var(--textColor2);
 }
 
 .podcast-subcontainer a{
@@ -283,19 +302,20 @@ body{
 }
 
 #social i {
-    color: #F86D17;
+    color: var(--textColor2);
+    font-size: 30px;
     padding: 0 10px;
     padding: 8px;
     border-radius: 50%;
 }
 
 #social i:hover{
-    background-color: #F86D17;
-    color:#FFFFFF;
+    background-color: var(--textColor2);
+    color:var(--whiteText);
 }
 
 .host h1 {
-    color:#F86D17;
+    color:var(--textColor2);
     text-align: center;
     font-family: garet;
     font-size: 40px;
@@ -314,12 +334,11 @@ body{
     width: 400px;
     height: auto;
     padding: 30px;
-    background-color: #31363F;
+    background-color: var(--hostBackground);
     border-radius: 10px;
     margin: 10px;
     text-align: center;
     margin-bottom: 30px;
-    box-shadow: 0 2px 5px 5px #000000;
 }
 
 .host-subcontainer img{
@@ -330,7 +349,7 @@ body{
 }
 
 .host-container h2 {
-    color:#F86D17;
+    color:var(--textColor2);
     font-family: garet;
     font-size: 34px;
     letter-spacing: 3px;
@@ -338,8 +357,8 @@ body{
 }
 
 .host-subcontainer img:hover {
-    border: 3px solid #F86D17;
-    box-shadow: 0 0 10px 10px #F86D17;
+    border: 3px solid var(--textColor2);
+    box-shadow: 0 0 10px 10px var(--textColor2);
 }
 
 .host-container a{
@@ -347,11 +366,11 @@ body{
 }
 
 .host-subcontainer h2:hover {
-    color: #FFFFFF;
+    color: var(--whiteText);
 }
 
 .host-subcontainer i{
-    color:#F86D17;
+    color:var(--textColor2);
     font-size: 30px;
     margin-left: 20px;
     padding: 10px;
@@ -359,21 +378,20 @@ body{
 }
 
 .host-subcontainer i:hover {
-    color: #FFFFFF;
-    background-color: #F86D17;
+    color: var(--whiteText);
+    background-color: var(--textColor2);
 }
 
 .why-container {
     background-image: url("../images/background5.png");
     padding: 30px;
-    margin: 10px 30px;
-    border-radius: 10px;
+    margin: 10px 0;
     text-align: center;
 }
 
 .why-container h1 {
     font-family: garet;
-    color: #000000;
+    color: var(--constBlack);
     font-size: 40px;
     font-weight: 800;
     letter-spacing: 5px;
@@ -390,23 +408,23 @@ body{
 .why-subcontainer p {
     font-family: garet;
     font-size: 24px;
-    color: #1A5276;
+    color: var(--whiteText);
     font-weight: 500;
     margin-bottom: 30px;
 }
 
 .why-container button{
-    background-color:#000000;
-    border-color:#000000;
+    background-color:var(--constBlack);
+    border-color:var(--constBlack);
     font-family: garet;
     padding: 17px;
-    color:#FFFFFF;
+    color:var(--whiteText);
     font-weight: 600;
 }
 
 .why-container button:hover {
     background-color: rgba(0, 0, 0, 0);
-    border-color: #000000;
+    border-color: var(--constBlack);
 }
 
 .story-header {
@@ -418,7 +436,7 @@ body{
 }
 
 .story-header h1 {
-    color:#F86D17;
+    color:var(--textColor2);
     font-family: garet;
     font-size: 100px;
     font-weight: 800;
@@ -426,7 +444,7 @@ body{
 }
 
 .story-container {
-    color:#FFFFFF;
+    color:var(--textColor);
     margin: 30px 300px;
     font-family: garet;
     font-size: 30px;
@@ -439,20 +457,18 @@ body{
 }
 
 .news-container {
-    background-image: url("../images/background6.png");
-    margin: 30px;
+    background-image: url("../images/background7.png");
     padding: 100px;
     text-align: center;
-    border-radius: 20px;
 }
 
 .news-container h1 {
-    color:#FFFFFF;
+    color: var(--textColor);
     font-family: garet;
     font-size: 50px;
     font-weight: 800;
     letter-spacing: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 #sub-content {
@@ -460,8 +476,8 @@ body{
 }
 
 .news-subcontainer p{
-    color:#FFFFFF;
-    margin: 100px;
+    color:var(--textColor);
+    margin: 10px 100px;
     font-family: garet;
     font-size: 24px;
     font-weight: 600;
@@ -478,9 +494,9 @@ body{
 }
 
 #mail button {
-    background-color: #000000;
-    color: #FFFFFF;
-    border-color: #000000;
+    background-color: var(--constBlack);
+    color: var(--whiteText);
+    border-color: var(--constBlack);
     padding: 10px;
     border-width: 3px;
     font-weight: 500;
@@ -488,13 +504,14 @@ body{
 
 #mail button:hover {
     background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 5px 5px var(--textColor);
 }
 
 .sss-container {
     font-family: garet;
 }
 .sss-container h1 {
-    color:#F86D17;
+    color:var(--textColor2);
     text-align: center;
     font-size: 100px;
     margin: 70px;
@@ -506,7 +523,7 @@ body{
 }
 
 .sss-subcontainer h2{
-    color:#F86D17;
+    color:var(--textColor2);
     font-size: 40px;
     font-weight: 700;
     margin: 30px 0;
@@ -514,7 +531,7 @@ body{
 }
 
 .sss-subcontainer p {
-    color: #FFFFFF;
+    color: var(--textColor);
     font-size: 30px;
     margin: 10px 50px;
     font-weight: 600;
@@ -533,7 +550,7 @@ footer img {
 }
 
 footer img:hover {
-    border: 3px solid #F86D17;
+    border: 3px solid var(--textColor2);
 }
 
 .footer-column p {
@@ -561,7 +578,7 @@ footer img:hover {
     margin-bottom: 15px;
     font-size: 40px;
     font-weight: 800;
-    color:#F86D17;
+    color:var(--textColor2);
     letter-spacing: 3px;
 }
 
@@ -582,7 +599,7 @@ footer img:hover {
 }
 
 .footer-column ul li a:hover {
-    color: #F86D17;
+    color: var(--textColor2);
 }
 
 footer {
@@ -591,7 +608,7 @@ footer {
 
 .blog {
     font-family: garet;
-    color:#F86D17;
+    color: var(--textColor2);
     font-size: 50px;
     font-weight: 900;
     max-width: 1000px;
@@ -601,20 +618,20 @@ footer {
 }
 
 .blog-content {
-    margin: 50px 100px;
-    padding: 30px;
+    margin: 50px 10px;
+    padding: 10px 30px;
     font-family: garet;
 }
 
 .blog-content h1 {
-    color: #F86D17;
+    color: var(--textColor2);
     font-size: 60px;
     font-weight: 700;
     letter-spacing: 1px; 
 }
 
 .blog-content h2 {
-    color:#eb771f;
+    color: var(--textColor3);
     padding: 10px 30px;
     font-size: 50px;
     font-weight: 800;
@@ -622,7 +639,7 @@ footer {
 }
 
 .blog-content h3 {
-    color:#eb771f;
+    color: var(--textColor3);
     padding: 10px 30px;
     font-size: 30px;
     font-weight: 800;
@@ -630,10 +647,9 @@ footer {
 }
 
 .blog-content p {
-    color: #FFFFFF;
-    padding: 10px 60px;
+    color: var(--textColor);
+    padding: 10px 20px;
     font-size: 30px;
-    font-weight: 500;
 }
 
 .blog-content:last-of-type {
@@ -666,7 +682,7 @@ footer {
 }
 
 .contact-form {
-    background-color: #F86D17;
+    background-color: var(--textColor2);
     width: 45rem;
     height: 45rem;
     border-radius: 20px;
@@ -681,7 +697,7 @@ form {
 }
 
 .contact-title {
-    color: #FFFFFF;
+    color: var(--whiteText);
     font-weight: 600;
     font-size: 3.2rem;
     line-height: 1;
@@ -718,10 +734,10 @@ form {
 .input-container .input {
     width: 100%;
     outline: none;
-    border: 2px solid #FFFFFF;
+    border: 2px solid var(--whiteText);
     background: none;
     padding: 0.6rem 1.2rem;
-    color: #FFFFFF;
+    color: var(--whiteText);
     font-weight: 500;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
@@ -742,7 +758,7 @@ form {
     background-color: #FFFFFF;
     border: 2px solid #FAFAFA;
     font-size: 0.95rem;
-    color: #F86D17;
+    color: var(--textColor2);
     line-height: 1;
     border-radius: 25px;
     outline: none;
@@ -910,6 +926,10 @@ li {
 
     .vision h1 {
         font-size: 1.5rem;
+    }
+
+    .vision-container {
+        gap: 0;
     }
 
     .vision-subcontainer {

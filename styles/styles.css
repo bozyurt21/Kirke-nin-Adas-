@@ -1041,7 +1041,7 @@ li {
         flex: 1 1 calc(50% - 20px);
         box-sizing: border-box;
         max-width: 48%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
-        padding: 5px;
+        padding: 1px;
         text-align: center;
     }
 

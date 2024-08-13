@@ -348,6 +348,38 @@
           
         </div>
       </section>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const emailForm = document.getElementById("emailForm");
+          const emailInput = document.getElementById("email");
+          const newsContainer = document.querySelector(".news-container");
+          const successMessage = document.createElement("p");
+          
+          successMessage.style.color = "green";
+          successMessage.style.marginTop = "20px";
+          successMessage.style.fontSize = "20px";
+          
+          emailForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const emailValue = emailInput.value;
+            
+            if (validateEmail(emailValue)) {
+              successMessage.textContent = "Bültenimize Katıldığınız İçin Teşekkürler!";
+              newsContainer.appendChild(successMessage);
+              emailInput.value = ""; // Clear the input
+            } else {
+              successMessage.textContent = "Lütfen Doğru Mail Adresi Girin!";
+              successMessage.style.color = "red";
+              newsContainer.appendChild(successMessage);
+            }
+          });
+          
+          function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+          }
+        });
+      </script>
       <footer>
         <div class="footer-container">
           <div class="footer-column">

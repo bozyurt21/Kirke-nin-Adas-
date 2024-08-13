@@ -1022,12 +1022,12 @@ li {
 
     .vision-container {
         gap: 0;
-        max-width: 150px;
     }
 
     .vision-subcontainer {
         margin: 1px;
         padding: 1px;
+        max-width: 30%;
     }
 
     .vision-subcontainer h2 {
@@ -1148,6 +1148,15 @@ li {
     .podcast-subcontainer{
         width: 70%;
         height: 70%;
+    }
+
+    .banner-item {
+        max-width: fit-content;
+    }
+
+    .banner-item img {
+        width: auto;
+        height: auto;
     }
 }
 
@@ -1320,6 +1329,15 @@ li {
 
     #mail button {
         width: 100%;
+    }
+
+    .banner-item {
+        max-width: fit-content;
+    }
+    
+    .banner-item img {
+        width: auto;
+        height: auto;
     }
 }
 

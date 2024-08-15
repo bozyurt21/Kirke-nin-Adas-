@@ -13,12 +13,13 @@
       <link rel="icon" href="./images/2.png" type="image/x-icon">
       <script defer src="./app.js"></script>
       <script defer src="./script.js"></script>
+      <script defer src="./script3.js"></script>
   </head>
   <body>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html" id="logo">Kirke'nin Adası</a>
+          <a class="navbar-brand" href="./index.html" id="logo"><img src="./images/2.png" style="width: 100px; height:auto"/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -257,21 +258,20 @@
             <h2>Genç Kadınların Güçlenmesi</h2>
             <p>Genç kadınların güçlenmesine ve toplumsal değişime öncü olmalarını hedefliyoruz.</p>
           </div>
-          <!---->
           <div class="vision-subcontainer hidden">
-            <img src="./icons/progress-icon.png">
-            <h2>Zorluklar ve Fırsatlar</h2>
-            <p>Podcast kanalımızda, kadın liderlerin karşılaştıkları zorlukları ve fırsatları birlikte keşfetmeyi amaçlıyoruz.</p>
-          </div>
+            <img src="./icons/justice-icon.png">
+            <h2>Toplumsal Cinsiyet Eşitliği</h2>
+            <p>Kadın liderlerin ve genç kadınların birlikte çalışarak toplumsal cinsiyet eşitliğine katkı sağlamalarını destekliyoruz.</p>
+          </div>       
           <div class="vision-subcontainer hidden">
             <img src="./icons/compass-icon.png">
             <h2>Potansiyel Keşfi</h2>
             <p>Genç kadınların potansiyellerini keşfetmelerine ve kendi kariyer hedeflerine ulaşmalarına yardımcı oluyoruz.</p>
           </div>
           <div class="vision-subcontainer hidden">
-            <img src="./icons/justice-icon.png">
-            <h2>Toplumsal Cinsiyet Eşitliği</h2>
-            <p>Kadın liderlerin ve genç kadınların birlikte çalışarak toplumsal cinsiyet eşitliğine katkı sağlamalarını destekliyoruz.</p>
+            <img src="./icons/progress-icon.png">
+            <h2>Zorluklar ve Fırsatlar</h2>
+            <p>Podcast kanalımızda, kadın liderlerin karşılaştıkları zorlukları ve fırsatları birlikte keşfetmeyi amaçlıyoruz.</p>
           </div>
           <div class="vision-subcontainer hidden">
             <img src="./icons/leader-icon.png">
@@ -330,6 +330,22 @@
           </a>
         </div>
       </section>
+      <!--Testimonials-->
+      <div class="testimonial">
+        <div class="testimonial-container">
+          <div class="testimonial-header"></div>
+        </div>
+      </div>
+      <!--Gallery-->
+      <div class="gallery-container">
+        <div class="gallery">
+            <img src="images/image1.JPG" alt="Image Gallery" id="gallery-image">
+        </div>
+        <div class="navigation">
+            <button class="arrow left-arrow" onclick="previousImage()">&#10094;</button>
+            <button class="arrow right-arrow" onclick="nextImage()">&#10095;</button>
+        </div>
+    </div>
       <!--NewsPaper-->
       <section class="news">
         <div class="news-container hidden">

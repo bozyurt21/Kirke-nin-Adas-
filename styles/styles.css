@@ -1377,7 +1377,7 @@ li {
         align-items: center;
         width: 100%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
         max-width: 100%;
-        margin: 0;
+        margin: 10px 30px;
         padding: 1px;
         text-align: center;
     }

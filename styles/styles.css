@@ -1155,7 +1155,7 @@ li {
         flex-direction: column;
         justify-content: space-between; /* Ensure content is evenly distributed */
         align-items: center;
-        width: 90%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
+        width: 80%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
         max-width: 100%;
         padding-right: 10%;
         padding: 1px;

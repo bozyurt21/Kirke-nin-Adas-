@@ -1105,9 +1105,9 @@ li {
     }
 
     .vision-subcontainer {
-        flex: 1 1 calc(50% - 20px);
+        flex: 1 1 100%;
         box-sizing: border-box;
-        max-width: 40%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
+        max-width: 90%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
         padding: 1px;
         text-align: center;
     }
@@ -1299,9 +1299,9 @@ li {
     }
 
     .vision-subcontainer {
-        flex: 1 1 calc(50% - 20px);
+        flex: 1 1 100%;
         box-sizing: border-box;
-        max-width: 40%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
+        max-width: 90%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
         padding: 5px;
         text-align: center;
     }
@@ -1434,7 +1434,7 @@ li {
         max-width: 100%;
     }
     .gallery-container {
-        height: 350px;
+        height: auto;
     }
 }
 

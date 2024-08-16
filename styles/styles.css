@@ -1145,14 +1145,18 @@ li {
     .vision-container {
         gap: 0;
         margin: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Three equal columns */
+        
     }
 
     .vision-subcontainer {
-        flex: 1 1 100%;
         box-sizing: border-box;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between; /* Ensure content is evenly distributed */
         align-items: center;
-        width: 70%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
+        width: 100%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
+        max-width: 100%;
         margin: 0;
         padding: 1px;
         text-align: center;
@@ -1352,17 +1356,7 @@ li {
         margin-left: 8%;
     }
 
-    .vision-subcontainer {
-        flex: 1 1 100%;
-        box-sizing: border-box;
-        justify-content: center;
-        align-items: center;
-        width: 100%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
-        margin: 0;
-        padding: 5px;
-        text-align: center;
-    }
-
+    
     .vision h1 {
         font-size: 2rem;
         margin: 10px;
@@ -1371,7 +1365,23 @@ li {
     .vision-container {
         gap: 0;
         margin: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Three equal columns */
+        
     }
+
+    .vision-subcontainer {
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: space-between; /* Ensure content is evenly distributed */
+        align-items: center;
+        width: 100%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
+        max-width: 100%;
+        margin: 0;
+        padding: 1px;
+        text-align: center;
+    }
+
     .vision-subcontainer h2 {
         font-size: 1.5rem;
     }

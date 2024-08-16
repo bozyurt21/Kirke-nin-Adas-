@@ -1107,7 +1107,7 @@ li {
     .vision-subcontainer {
         flex: 1 1 100%;
         box-sizing: border-box;
-        max-width: 90%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
+        max-width: 70%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
         padding: 1px;
         text-align: center;
     }
@@ -1301,7 +1301,7 @@ li {
     .vision-subcontainer {
         flex: 1 1 100%;
         box-sizing: border-box;
-        max-width: 90%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
+        max-width: 70%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
         padding: 5px;
         text-align: center;
     }

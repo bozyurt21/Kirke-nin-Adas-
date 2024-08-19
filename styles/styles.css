@@ -142,7 +142,7 @@ body{
 .content-container h1 {
     font-weight: 800;
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     letter-spacing: 5px;
     color: var(--textColor);
 }
@@ -152,8 +152,7 @@ body{
     border-radius: 20px;
     font-size: 24px;
     color: var(--whiteText);
-    margin: 0 100px;
-    margin-bottom: 20px;
+    margin: 0 10px;
 }
 
 #social-2 i{
@@ -523,15 +522,16 @@ body{
 }
 
 footer {
-    background-color: #333;
+    background-color: var(--constBlack);
     color: white;
     padding: 20px 0;
+    font-style: italic;
 }
 
 footer img {
     width: 100px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 20px;
 }
 
 footer img:hover {
@@ -1155,9 +1155,9 @@ li {
         flex-direction: column;
         justify-content: space-between; /* Ensure content is evenly distributed */
         align-items: center;
-        width: 80%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
-        max-width: 100%;
-        padding-right: 10%;
+        width: 80%; 
+        max-width: 90%;
+        margin-right: 10%;
         padding: 1px;
         text-align: center;
     }

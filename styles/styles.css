@@ -7,13 +7,15 @@
     --textColor2: #F86D17;
     --textColor3: #eb771f;
     --hostBackground: #31363F;
-    --font: 'Anton', sans-serif;;
+    --font: 'Anton', sans-serif;
+    --font2: "Ahkio-Regular";
 }
 
 #logo {
     font-size: 1.5rem;
     color: var(--textColor2);
     font-weight: 800;
+    font-family: var(--font2) ;
 }
 
 body{
@@ -29,7 +31,7 @@ body{
     background-color:var(--navBackground);
     font-size: 1.1rem;
     font-weight: 600;
-    font-family: var(--font-2);
+    font-family: var(--font2);
     padding-left: 10px;
     z-index: 1000;
 }
@@ -111,6 +113,10 @@ body{
     border-color: var(--textColor2);
 }
 
+.banner-button a button {
+    margin-right: 30px;
+}
+
 
 .banner button:hover {
     background-color: rgba(0, 0, 0, 0);
@@ -122,6 +128,40 @@ body{
     display: block;
     padding: 50px;
     background-image: url("../images/background3.png");
+}
+
+.turkishe-container {
+    text-align: center;
+    font-family: var(--font);
+}
+
+.turkishe-container h1 {
+    color: var(--textColor2);
+    margin: 20px 400px;
+    padding: 30px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-size: 40px;
+
+}
+
+.turkishe-container p {
+    padding: 30px;
+    border-radius: 20px;
+    font-size: 24px;
+    color: var(--textColor);
+    margin: 0 100px;
+}
+
+.turkishe-container button {
+    background-color:var(--textColor2);
+    border-color: var(--textColor2);
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.turkishe-container button:hover {
+    color: var(--constBlack);
 }
 
 #link-name {
@@ -932,11 +972,11 @@ li {
 
 .gallery-container {
     position: relative;
-    width: 98%;
-    height: 800px;
+    width: 60%;
+    height: auto;
     object-fit: cover;
     margin: 30px 10px;
-    margin-right: 10px;
+    margin-left: 20%;
     overflow: hidden;
     background-color: white;
     border-radius: 10px;
@@ -1155,9 +1195,8 @@ li {
         flex-direction: column;
         justify-content: space-between; /* Ensure content is evenly distributed */
         align-items: center;
-        width: 80%; 
-        max-width: 90%;
-        margin-right: 10%;
+        max-width: 80%;
+        margin-left: 10%;
         padding: 1px;
         text-align: center;
     }
@@ -1304,6 +1343,20 @@ li {
     .testimonials-header {
         margin-top: 10px;
         font-size: 1.5rem;
+    }
+
+    .turkishe-container h1 {
+        margin: 10px;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+
+    .turkishe-container p {
+        font-size: 1rem;
+    }
+
+    .turkishe-container button {
+        font-size: 1rem;
     }
 }
 
@@ -1510,6 +1563,19 @@ li {
     .testimonials-header {
         margin-top: 10px;
         font-size: 1.5rem;
+    }
+    .turkishe-container h1 {
+        margin: 10px;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+
+    .turkishe-container p {
+        font-size: 1rem;
+    }
+
+    .turkishe-container button {
+        font-size: 1rem;
     }
 }
 

@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --textColor: #000000;
     --constBlack: #000000;
@@ -83,11 +89,11 @@ body{
     object-fit: cover;
     width: 100%;
     height: auto;
-    padding: 100px;
+    padding: 5rem;
 }
 
 .banner h1 {
-    margin: 200px 50px 100px 200px;
+    margin: 6rem 6rem 4rem 5rem;
     color: var(--whiteText);
     padding: 10px;
     font-size: 3rem;
@@ -97,7 +103,7 @@ body{
 }
 
 .banner p {
-    margin: 0 60px 120px 120px;
+    margin: 6rem 6rem 6rem 6rem;
     color: var(--whiteText);
     padding: 10px;
     font-size: 1.1rem;
@@ -111,6 +117,8 @@ body{
     font-weight: 600;
     background-color:var(--textColor2);
     border-color: var(--textColor2);
+    margin-top: 3rem;
+    margin-bottom: 6.5rem;
 }
 
 .banner-button a button {
@@ -1184,13 +1192,14 @@ li {
 
     .vision-container {
         gap: 0;
-        margin: 0 50px;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); /* Three equal columns */
+        margin: 0;
+        margin-right: 20px;
         
     }
 
     .vision-subcontainer {
+        flex-wrap: wrap;
+        flex: 1 1 calc(100% - 20px);
         box-sizing: border-box;
         flex-direction: column;
         justify-content: space-between; /* Ensure content is evenly distributed */
@@ -1352,7 +1361,7 @@ li {
 
     .turkishe-container p {
         font-size: 1rem;
-        margin: 0 50px;
+        margin: 0;
     }
 
     .turkishe-container button {
@@ -1417,20 +1426,19 @@ li {
 
     .vision-container {
         gap: 0;
-        margin: 0 10px;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); /* Three equal columns */
+        margin: 0;
+        margin-right: 20px;
         
     }
 
     .vision-subcontainer {
+        flex-wrap: wrap;
         box-sizing: border-box;
+        flex: 1 1 calc(100% - 20px);
         flex-direction: column;
         justify-content: space-between; /* Ensure content is evenly distributed */
         align-items: center;
-        width: 90%; /* Adjusts the maximum width slightly less than 50% to allow for margin */
-        max-width: 100%;
-        padding-right: 10%;
+        max-width: 80%;
         padding: 1px;
         text-align: center;
     }

@@ -15,9 +15,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="icon" href="./images/logo1.png" type="image/x-icon">
     <script src="https://unpkg.com/feather-icons"></script>
     <script defer src="./app.js"></script>
     <script defer src="./app2.js"></script>
+    <script defer src="./script2.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+          emailjs.init({
+          publicKey: "dDoE4etZW7tebjVHy",
+        });
+      })();
+    </script>
   </head>
   <body>
     <script
@@ -68,29 +80,29 @@
     <!--CONTACT ME-->
     <div class="contact-container">
         <div class="contact-form">
-          <form id="contactForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdzzQwr_Y9hpQ5f5X_3toASyLN5N000Xj2ba1tU1jx-D6m6ow/formResponse" method="POST">
+          <form id="contactForm">
             <h3 class="contact-title hidden">İLETİŞİM</h3>
             <div class="input-container">
-              <input type="text" name="entry.1772014944" class="input">
-              <label for="">Ad/Soyad</label>
+              <input type="text" id="name" class="input">
+              <label for="name">Ad/Soyad</label>
               <span>Ad/Soyad</span>
             </div>
             <div class="input-container">
-              <input type="email" name="entry.1103269105" class="input">
-              <label for="">Email</label>
+              <input type="email" id="email" class="input">
+              <label for="email">Email</label>
               <span>Email</span>
             </div>
             <div class="input-container">
-              <input type="text" name="entry.91582557" class="input">
-              <label for="">Konu</label>
+              <input type="text"  id="subject" class="input">
+              <label for="subject">Konu</label>
               <span>Konu</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="entry.2006334440" class="input" cols="30" rows="5"></textarea>
-              <label for="">Mesaj</label>
+              <textarea class="input" id="message" cols="30" rows="5"></textarea>
+              <label for="message">Mesaj</label>
               <span>Mesaj</span>
             </div>
-            <input type="submit" value="Yolla" class="btn hidden">
+            <input type="submit" value="Yolla" class="btn" onclick="sendEmail()"/>
           </form>
         </div> 
     </div>
@@ -131,6 +143,27 @@
     </footer>
     <!--It doesn't check for empty forms, it should check for empty forms since they didn't send-->
     <script>
+      const express = require('express');
+      const request = require('request');
+      const app = express();
+      
+      app.use(express.urlencoded({ extended: true }));
+      app.use(express.json());
+      
+      app.post('/submit-form', (req, res) => {
+          const googleFormUrl = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdzzQwr_Y9hpQ5f5X_3toASyLN5N000Xj2ba1tU1jx-D6m6ow/formResponse';
+          
+          // Forward the form data to Google Forms
+          request.post({ url: googleFormUrl, form: req.body }, (error, response, body) => {
+              if (error) {
+                  res.status(500).send('Submission failed.');
+              } else {
+                  res.status(200).send('Submission successful.');
+              }
+          });
+      });
+      
+      app.listen(3000, () => console.log('Server started on port 3000'));
       document.getElementById('contactForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the default form submission
     
@@ -138,8 +171,8 @@
         var data = new FormData(form);
     
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', form.action, true);
-        xhr.setRequestHeader('Accept', 'application/xml, text/xml, */*; q=0.01');
+        xhr.open('POST', form.action, true);*/
+       xhr.setRequestHeader('Accept', 'application/xml, text/xml, */*; q=0.01');
     
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
@@ -152,7 +185,7 @@
         };
     
         xhr.send(data);
-    });
+      });
     </script>
   </body>
 </html>

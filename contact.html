@@ -139,53 +139,6 @@
             </ul>
         </div>
     </div>
-
     </footer>
-    <!--It doesn't check for empty forms, it should check for empty forms since they didn't send-->
-    <script>
-      const express = require('express');
-      const request = require('request');
-      const app = express();
-      
-      app.use(express.urlencoded({ extended: true }));
-      app.use(express.json());
-      
-      app.post('/submit-form', (req, res) => {
-          const googleFormUrl = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdzzQwr_Y9hpQ5f5X_3toASyLN5N000Xj2ba1tU1jx-D6m6ow/formResponse';
-          
-          // Forward the form data to Google Forms
-          request.post({ url: googleFormUrl, form: req.body }, (error, response, body) => {
-              if (error) {
-                  res.status(500).send('Submission failed.');
-              } else {
-                  res.status(200).send('Submission successful.');
-              }
-          });
-      });
-      
-      app.listen(3000, () => console.log('Server started on port 3000'));
-      document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-    
-        var form = event.target;
-        var data = new FormData(form);
-    
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', form.action, true);*/
-       xhr.setRequestHeader('Accept', 'application/xml, text/xml, */*; q=0.01');
-    
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                // Display the success message
-                alert("...")
-            } else if (xhr.readyState === 4) {
-                // Handle error case if needed
-                alert('Mesajınız başarıyla yollanmıştır:)');
-            }
-        };
-    
-        xhr.send(data);
-      });
-    </script>
   </body>
 </html>

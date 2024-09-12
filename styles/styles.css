@@ -555,14 +555,6 @@ body{
     margin: 30px 300px;
 }
 
-.sss-subcontainer h2{
-    color:var(--textColor2);
-    font-size: 40px;
-    font-weight: 700;
-    margin: 30px 0;
-    letter-spacing: 3px;
-}
-
 .sss-subcontainer p {
     color: var(--textColor);
     font-size: 30px;
@@ -1055,6 +1047,24 @@ li {
     margin-top: 100px;
     margin-bottom: 50px;
 
+}
+
+.sss-header {
+    display: flex;
+    gap: 1rem;
+    color: var(--textColor2);
+}
+
+
+.sss-btn {
+    margin: auto 0;
+    border-radius: 50%;
+    background-color: var(--textColor2);
+    font-weight: 500;
+}
+
+.sss-btn:hover {
+    color: var(--constBlack);
 }
 
 @media (max-width: 576px) {

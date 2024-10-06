@@ -35,7 +35,7 @@ body{
 
 .navbar {
     background-color:var(--navBackground);
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     font-family: var(--font2);
     padding-left: 10px;
@@ -96,7 +96,7 @@ body{
     margin: 6rem 6rem 4rem 5rem;
     color: var(--whiteText);
     padding: 10px;
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: var(--font);
     font-weight: 800;
     text-align: center;
@@ -106,7 +106,7 @@ body{
     margin: 6rem 6rem 6rem 6rem;
     color: var(--whiteText);
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-family: var(--font);
     text-align: center;
 }
@@ -132,12 +132,6 @@ body{
     color:var(--textColor2);
 }
 
-.content-container {
-    display: block;
-    padding: 50px;
-    background-image: url("../images/background3.png");
-}
-
 .turkishe-container {
     text-align: center;
     font-family: var(--font);
@@ -149,14 +143,14 @@ body{
     padding: 30px;
     font-weight: 800;
     letter-spacing: 5px;
-    font-size: 40px;
+    font-size: 2rem;
 
 }
 
 .turkishe-container p {
     padding: 30px;
     border-radius: 20px;
-    font-size: 24px;
+    font-size: 1rem;
     color: var(--textColor);
     margin: 0 100px;
 }
@@ -165,7 +159,7 @@ body{
     background-color:var(--textColor2);
     border-color: var(--textColor2);
     margin-bottom: 30px;
-    font-size: 24px;
+    font-size: 1rem;
 }
 
 .turkishe-container button:hover {
@@ -182,6 +176,13 @@ body{
     color: var(--whiteText);
 }
 
+.content-container {
+    display: block;
+    padding: 50px;
+    background-image: url("../images/background3.png");
+}
+
+
 .content-container h1, .content-container p {
     text-align: center;
     font-family: var(--font);
@@ -189,7 +190,7 @@ body{
 
 .content-container h1 {
     font-weight: 800;
-    font-size: 40px;
+    font-size: 2rem;
     margin-bottom: 5px;
     letter-spacing: 5px;
     color: var(--textColor);
@@ -198,14 +199,14 @@ body{
 .content-container p {
     padding: 30px;
     border-radius: 20px;
-    font-size: 24px;
+    font-size: 1rem;
     color: var(--whiteText);
     margin: 0 10px;
 }
 
 #social-2 i{
     color:var(--constBlack);
-    font-size: 40px;
+    font-size: 2rem;
     margin: 0 20px;
     margin-left: 18%;
     padding: 10px;
@@ -218,6 +219,7 @@ body{
 }
 
 #social-2 a{
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -226,7 +228,7 @@ body{
     font-family: var(--font);
     text-align: center;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 2rem;
     letter-spacing: 5px;
     margin-top: 100px;
 }
@@ -247,7 +249,7 @@ body{
     text-align: center;
     color: var(--textColor2);
     font-family: var(--font);
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 550;
     letter-spacing: 3px;
 }
@@ -264,7 +266,7 @@ body{
 .vision-subcontainer p {
     color: var(--textColor);
     font-family: var(--font);
-    font-size: 22px;
+    font-size: 0.8;
 }
 
 .vision-container img {
@@ -275,7 +277,7 @@ body{
     margin-top: 50px;
     color:var(--textColor2);
     font-family: var(--font);
-    font-size: 36px;
+    font-size: 2rem;
     text-align: center;
     font-weight: 800;
     margin-bottom: 50px;
@@ -305,7 +307,7 @@ body{
 
 .podcast-subcontainer a h2 {
     color: var(--textColor2);
-    font-size: 30px;
+    font-size: 1.25rem;
     font-weight: 600;
     font-family: var(--font);
     text-align: center;
@@ -353,7 +355,7 @@ body{
     color:var(--textColor2);
     text-align: center;
     font-family: var(--font);
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 800;
     letter-spacing: 5px;
     margin-bottom: 70px;
@@ -386,7 +388,7 @@ body{
 .host-container h2 {
     color:var(--textColor2);
     font-family: var(--font);
-    font-size: 34px;
+    font-size: 1.5rem;
     letter-spacing: 3px;
     margin-bottom: 20px;
 }
@@ -427,7 +429,7 @@ body{
 .why-container h1 {
     font-family: var(--font);
     color: var(--constBlack);
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 800;
     letter-spacing: 5px;
     text-align: center;
@@ -442,8 +444,8 @@ body{
 
 .why-subcontainer p {
     font-family: var(--font);
-    font-size: 24px;
-    color: var(--whiteText);
+    font-size: 1rem;
+    color: var(--constBlack);
     margin-bottom: 30px;
 }
 
@@ -451,6 +453,7 @@ body{
     background-color:var(--constBlack);
     border-color:var(--constBlack);
     font-family: var(--font);
+    font-size: 0.8rem;
     padding: 17px;
     color:var(--whiteText);
     font-weight: 600;
@@ -472,7 +475,7 @@ body{
 .story-header h1 {
     color:var(--textColor2);
     font-family: var(--font);
-    font-size: 100px;
+    font-size: 3rem;
     font-weight: 800;
     letter-spacing: 10px;
 }
@@ -481,9 +484,9 @@ body{
     color:var(--textColor);
     margin: 30px 300px;
     font-family: garet;
-    font-size: 30px;
+    font-size: 1.3rem;
     font-weight: 500;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 .story-container p {
@@ -499,7 +502,7 @@ body{
 .news-container h1 {
     color: var(--textColor);
     font-family: var(--font);
-    font-size: 50px;
+    font-size: 2rem;
     font-weight: 800;
     letter-spacing: 5px;
     margin-bottom: 30px;
@@ -513,7 +516,7 @@ body{
     color:var(--textColor);
     margin: 10px 100px;
     font-family: var(--font);
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 #mail {
@@ -546,7 +549,7 @@ body{
 .sss-container h1 {
     color:var(--textColor2);
     text-align: center;
-    font-size: 100px;
+    font-size: 2.5rem;
     margin: 70px;
     font-weight: 900;
     letter-spacing: 10px;
@@ -557,8 +560,11 @@ body{
 
 .sss-subcontainer p {
     color: var(--textColor);
-    font-size: 30px;
+    font-size: 1rem;
     margin: 10px 50px;
+}
+.sss-header h2 {
+    font-size: 1.5rem;
 }
 
 footer {
@@ -580,7 +586,7 @@ footer img:hover {
 
 .footer-column p {
     margin-top: 50px;
-    font-size: 20px;
+    font-size: 1rem;
     font-style: italic;
 }
 
@@ -601,7 +607,7 @@ footer img:hover {
 
 .footer-column h3 {
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 800;
     color:var(--textColor2);
     letter-spacing: 3px;
@@ -620,7 +626,7 @@ footer img:hover {
     color: white;
     text-decoration: none;
     transition: color 0.2s;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .footer-column ul li a:hover {
@@ -634,7 +640,7 @@ footer {
 .blog {
     font-family: var(--font);
     color: var(--textColor2);
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 900;
     max-width: 1000px;
     text-align: center;
@@ -643,38 +649,35 @@ footer {
 }
 
 .blog-content {
-    margin: 50px 10px;
+    margin: 2rem 4rem;
     padding: 10px 30px;
     font-family: var(--font);
 }
 
 .blog-content h1 {
     color: var(--textColor2);
-    font-size: 60px;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1px; 
 }
 
 .blog-content h2 {
     color: var(--textColor3);
-    padding: 10px 30px;
-    font-size: 50px;
+    font-size: 1.5rem;
     font-weight: 800;
     margin-right: 30%;
 }
 
 .blog-content h3 {
     color: var(--textColor3);
-    padding: 10px 30px;
-    font-size: 30px;
+    font-size: 1.2rem;
     font-weight: 800;
     margin-right: 30%;
 }
 
 .blog-content p {
     color: var(--textColor);
-    padding: 10px 20px;
-    font-size: 30px;
+    font-size: 1rem;
 }
 
 .blog-content:last-of-type {
@@ -1057,8 +1060,10 @@ li {
 .sss-btn {
     margin: auto 0;
     border-radius: 50%;
-    background-color: var(--textColor2);
+    background-color: none;
+    color: var(--textColor2)
     font-weight: 500;
+    font-size: 1rem;
 }
 
 .sss-btn:hover {
@@ -1573,103 +1578,5 @@ li {
 
     .turkishe-container button {
         font-size: 1rem;
-    }
-}
-
-@media (min-width: 768px) {
-    .banner h1 {
-        font-size: 4rem;
-    }
-
-    .banner p {
-        font-size: 1.5rem;
-    }
-
-    .banner button {
-        font-size: 1.5rem;
-    }
-
-    .content-container h1 {
-        font-size: 3rem;
-    }
-
-    .content-container p {
-        font-size: 1.5rem;
-    }
-
-    .vision h1 {
-        font-size: 2.5rem;
-    }
-
-    .vision-subcontainer h2 {
-        font-size: 2rem;
-    }
-
-    .vision-subcontainer p {
-        font-size: 1.5rem;
-    }
-
-    .podcast h1 {
-        font-size: 2.5rem;
-    }
-
-    .podcast-subcontainer h2 {
-        font-size: 2rem;
-    }
-
-    .host h1 {
-        font-size: 2.5rem;
-    }
-
-    .host-container h2 {
-        font-size: 2rem;
-    }
-
-    .why-container h1 {
-        font-size: 3rem;
-    }
-
-    .why-subcontainer p {
-        font-size: 2rem;
-    }
-
-    .news-container h1 {
-        font-size: 3rem;
-    }
-
-    .news-subcontainer p {
-        font-size: 2rem;
-    }
-
-    .blog-content h1 {
-        font-size: 3rem;
-    }
-
-    .blog-content h2 {
-        font-size: 2.5rem;
-    }
-
-    .blog-content p {
-        font-size: 1.5rem;
-    }
-
-    .sss-container h1 {
-        font-size: 3rem;
-    }
-
-    .sss-subcontainer h2 {
-        font-size: 2.5rem;
-    }
-
-    .sss-subcontainer p {
-        font-size: 1.5rem;
-    }
-
-    .story-header h1 {
-        font-size: 3rem;
-    }
-
-    .story-container p {
-        font-size: 1.5rem;
     }
 }
